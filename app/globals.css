@@ -4,3 +4,7 @@ span {
   font-family: var(--font-cormorant);
   font-size: 1em;
 }
+
+h4 {
+    font-family: var(--font-cormorant);
+}
