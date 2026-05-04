@@ -22,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={"h-full antialiased font-sans "}>
+    <html lang="pt-br" className="h-full antialiased scroll-smooth">
       <body
-        className={`${manrope.className} ${cormorant.variable} min-h-full flex flex-col bg-white`}
+        className={`${manrope.className} ${cormorant.variable} min-h-full flex flex-col bg-white transition-all ease-in`}
       >
-        <div>{children}</div>
+        {children}
       </body>
     </html>
   );

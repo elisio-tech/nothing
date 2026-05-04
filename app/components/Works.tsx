@@ -20,8 +20,8 @@ export default function Works() {
     },
   ];
   return (
-    <div className="mt-44 mx-16">
-      <div className="flex items-center gap-2 font-medium">
+    <div className="mx-16" id="projects">
+      <div className="flex items-center gap-2 font-medium pt-18">
         <div className="w-1 h-1 bg-zinc-900" />
         <h3>Featured work</h3>
       </div>
@@ -36,12 +36,12 @@ export default function Works() {
 
             <div className="flex items-center gap-2">
               {service.map((title, i) => (
-                <h4
+                <p
                   key={i}
                   className="px-4 py-1 border border-zinc-200 text-zinc-800 text-xs"
                 >
                   {title}
-                </h4>
+                </p>
               ))}
             </div>
           </div>

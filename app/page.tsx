@@ -1,8 +1,10 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "@/app/components/Header";
 import "@/app/globals.css";
 import Hero from "@/app/components/Hero";
-import Works from "./components/Works";
+import Works from "@/app/components/Works";
+import About from "@/app/components/About";
+import Profile from "@/app/components/Profile";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Works />
+      <About />
+      <Profile />
     </div>
   );
 }
