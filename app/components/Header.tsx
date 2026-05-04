@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex gap-44 border-l py-3 pl-24  border-gray-200">
           {navItems.map((link, i) => (
             <Link href={link} key={i} className="font-medium text-sm">
-              <span className=" pr-1 text-gray-600 font-cormorant">
+              <span className="text-lg pr-1 text-gray-600 font-cormorant">
                 0{i + 1}
               </span>
               {link}
