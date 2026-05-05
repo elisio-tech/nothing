@@ -1,3 +1,4 @@
+import Header from "@/app/components/Header";
 import type { Metadata } from "next";
 import { Cormorant, Manrope } from "next/font/google";
 import "./globals.css";
@@ -22,10 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className="h-full antialiased scroll-smooth">
+    <html
+      lang="pt-br"
+      className="h-full antialiased scroll-smooth scroll-red-400 bg-zinc-50"
+    >
       <body
-        className={`${manrope.className} ${cormorant.variable} min-h-full flex flex-col bg-white transition-all ease-in`}
+        className={`${manrope.className} ${cormorant.variable} min-h-full flex flex-col  transition-all ease-in`}
       >
+        <Header />
         {children}
       </body>
     </html>

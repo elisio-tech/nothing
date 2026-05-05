@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/app/components/Header";
+
 import "@/app/globals.css";
 import Hero from "@/app/components/Hero";
 import Works from "@/app/components/Works";
@@ -9,7 +9,6 @@ import Profile from "@/app/components/Profile";
 export default function Home() {
   return (
     <div>
-      <Header />
       <Hero />
       <Works />
       <About />
