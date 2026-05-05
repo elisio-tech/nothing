@@ -2,6 +2,8 @@ import { ArrowDownToLine, ArrowRight } from "lucide-react";
 import React from "react";
 
 export default function Experience() {
+  const indices = ["Role", "Company", "Year"];
+
   const experiences = [
     {
       role: "Lead Designer",
@@ -29,15 +31,15 @@ export default function Experience() {
     },
   ];
   return (
-    <div className="mt-24">
-      <div className="mx-16 grid grid-cols-2 h-[41vh]">
+    <div className="mt-24 mb-44">
+      <div className="mx-16 grid grid-cols-2">
         <div>
           <div className="flex items-center gap-2 font-medium">
             <div className="w-1 h-1 bg-zinc-900" />
             <h3>About</h3>
           </div>
           <h1 className="mt-8 text-5xl font-medium mb-4">My Experience</h1>
-          <p className="text-sm text-gray-700 mb-8">
+          <p className="text-sm text-gray-700 mb-8 max-w-md">
             Throughout my career I’ve had the privilege of working with some
             very talented people at a great bunch of companies.
           </p>
@@ -53,15 +55,22 @@ export default function Experience() {
           </button>
         </div>
 
-        <div className="flex flex-col self-baseline-last">
+        <div className="self-baseline-last mt-80">
+          <div className="flex justify-between text-sm border-b border-zinc-200 pb-2">
+            {indices.map((indice) => (
+              <h1 key={indice}>{indice}</h1>
+            ))}
+          </div>
           {experiences.map((experience, i) => (
             <div key={i}>
-              <div className="flex justify-between items-center border-b py-6">
+              <div className="grid grid-cols-3 items-center border-b border-zinc-200 py-6">
                 <h1 className="text-xl font-medium">{experience.role}</h1>
-                <h3 className="place-self-start text-xl font-medium">
+
+                <h3 className="text-xl font-medium justify-self-center text-left">
                   {experience.company}
                 </h3>
-                <div className="inline-flex items-center gap-x-1 text-sm">
+
+                <div className="justify-self-end inline-flex items-center gap-x-1 text-sm text-zinc-600">
                   <p>{experience.start}</p>
                   <ArrowRight size={12} />
                   <p>{experience.end}</p>
