@@ -1,3 +1,4 @@
+import { ArrowDown } from "lucide-react";
 import React from "react";
 
 export default function Hero() {
@@ -17,7 +18,12 @@ export default function Hero() {
           <h1 className="text-7xl font-medium max-w-5xl">
             I am a Frontend specialising in crafting digital experiences.
           </h1>
-          <button className="text-xs uppercase">Scroll </button>
+          <a
+            href="#contact"
+            className="cursor-pointer text-xs uppercase flex gap-x-4 items-center hover:opacity-70"
+          >
+            Scroll <ArrowDown size={18} className="animate-bounce" />
+          </a>
         </div>
       </div>
     </div>

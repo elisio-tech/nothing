@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Profile() {
   return (
-    <div className="bg-white pt-24" id="contact">
-      <div className="mx-16 flex justify-between gap-4 mb-8">
+    <div className="bg-white pt-24  " id="contact">
+      <div className="mx-16 flex justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 font-medium">
             <div className="w-1 h-1 bg-zinc-900" />
@@ -21,7 +21,7 @@ export default function Profile() {
             visual identity.
           </p>
         </div>
-        <div className="bg-gray-100 w-64 h-32 self-end-safe" />
+        <div className="bg-gray-100 w-64 h-32 self-end-safe mb-24" />
         <div className="bg-gray-100 w-[40%] h-[70vh]  mb-44" />
       </div>
     </div>
