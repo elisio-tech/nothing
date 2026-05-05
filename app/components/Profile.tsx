@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Profile() {
   return (
-    <div className="bg-white pt-24  " id="contact">
+    <div className="bg-white pt-24">
       <div className="mx-16 flex justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 font-medium">

@@ -6,7 +6,7 @@ import Works from "@/app/components/Works";
 import About from "@/app/components/About";
 import Profile from "@/app/components/Profile";
 import Experience from "@/app/components/Experience";
-import Skills from "@/app/components/Skills";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <Profile />
       <Experience />
-      <Skills />
+      <Footer />
     </div>
   );
 }
